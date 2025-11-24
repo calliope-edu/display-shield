@@ -196,11 +196,23 @@ namespace texteffects {
 }
 
 interface Bitmap {
-    //% helper=imagePrint
+    //% helper=imagePrint blockNamespace="drawing" group="Drawing"
+    //% block="print $text in $this at x $x y $y $c=colorindexpicker"
+    //% blockId=bitmapPrint
+    //% this.shadow="theScreen"
+    //% weight=90
+    //% x.defl=0 y.defl=0 c.defl=1 text.defl="Hello"
     print(text: string, x: number, y: number, color?: number, font?: bitmaps.Font, offsets?: texteffects.TextEffectState[]): void;
 
-    //% helper=imagePrintCenter
+    //% helper=imagePrintCenter blockNamespace="drawing" group="Drawing"
+    //% block="print $text centered in $this at y $y $c=colorindexpicker"
+    //% blockId=bitmapPrintCenter
+    //% this.shadow="theScreen"
+    //% weight=89
+    //% y.defl=60 c.defl=1 text.defl="Hello"
     printCenter(text: string, y: number, color?: number, font?: bitmaps.Font): void;
+}
+
 }
 
 namespace helpers {
