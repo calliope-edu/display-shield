@@ -211,7 +211,6 @@ interface Bitmap {
     //% weight=89
     //% y.defl=60 c.defl=1 text.defl="Hello"
     printCenter(text: string, y: number, color?: number, font?: bitmaps.Font): void;
-}
 
 }
 
