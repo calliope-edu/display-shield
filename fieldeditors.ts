@@ -60,13 +60,26 @@ namespace bitmaps {
         return index;
     }
 
-    //% blockId=fontpicker block="$font" blockHidden=true shim=TD_ID
-    //% font.fieldEditor="dropdownnumber"
-    //% font.fieldOptions.decompileLiterals="true"
-    //% font.fieldOptions.data='[["font8","bitmaps.font8"],["font12","bitmaps.font12"],["font5","bitmaps.font5"]]'
-    export function __fontPicker(font: Font): Font {
-        return font;
-    }
+    //% blockId="font8_picker" block="font8"
+    //% fixedInstance
+    //% weight=10 blockGap=8
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export const font8Picker: Font = font8;
+
+    //% blockId="font12_picker" block="font12"
+    //% fixedInstance
+    //% weight=9 blockGap=8
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export const font12Picker: Font = font12;
+
+    //% blockId="font5_picker" block="font5"
+    //% fixedInstance
+    //% weight=8 blockGap=8
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export const font5Picker: Font = font5;
 }
     //% blockIdentity=bitmaps._bitmap
     const defaultBitmap: Bitmap = bmp`
