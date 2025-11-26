@@ -203,23 +203,23 @@ namespace texteffects {
 
 interface Bitmap {
     //% helper=imagePrint blockNamespace="drawing" group="Drawing"
-    //% block="print $text in $this at x $x y $y in color $color=colorindexpicker || and font $font=fontpicker"
+    //% block="print $text in $this at x $x y $y in color $color=colorindexpicker || and font $font"
     //% blockId=bitmapPrint
     //% this.shadow="theScreen"
     //% weight=90
     //% x.defl=0 y.defl=0 color.defl=1 text.defl="Hello"
-    //% font.defl=bitmaps.font8
+    //% font.shadow="variables_get" font.defl="font8"
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
     print(text: string, x: number, y: number, color?: number, font?: bitmaps.Font, offsets?: texteffects.TextEffectState[]): void;
 
     //% helper=imagePrintCenter blockNamespace="drawing" group="Drawing"
-    //% block="print $text centered in $this at y $y in color $color=colorindexpicker || and font $font=fontpicker"
+    //% block="print $text centered in $this at y $y in color $color=colorindexpicker || and font $font"
     //% blockId=bitmapPrintCenter
     //% this.shadow="theScreen"
     //% weight=89
     //% y.defl=60 color.defl=1 text.defl="Hello"
-    //% font.defl=bitmaps.font8
+    //% font.shadow="variables_get" font.defl="font8"
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
     printCenter(text: string, y: number, color?: number, font?: bitmaps.Font): void;
