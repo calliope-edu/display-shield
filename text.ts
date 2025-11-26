@@ -342,7 +342,7 @@ namespace helpers {
     }
 
     //% blockId=imageShowDataView
-    //% block="show data view in $img=theScreen headline $headline $label1 $value1 || $label2 $value2 || $label3 $value3 || color $color=colorindexpicker font $font"
+    //% block="show data view in $img=theScreen headline $headline label $label1 value $value1 || label $label2 value $value2 || label $label3 value $value3 || color $color=colorindexpicker font $font"
     //% blockNamespace="drawing" group="Text"
     //% weight=85
     //% expandableArgumentMode="enabled"
