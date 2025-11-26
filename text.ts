@@ -16,26 +16,19 @@ namespace bitmaps {
         Font12
     }
 
-    export function getFont(fontName: FontName): Font {
-        switch (fontName) {
-            case FontName.Font5: return font5;
-            case FontName.Font12: return font12;
-            case FontName.Font8:
-            default: return font8;
-        }
-    }
-
     //% blockId=fontPicker block="$font"
     //% shim=TD_ID blockHidden=1
     //% font.fieldEditor="gridpicker"
     //% font.fieldOptions.width=220 font.fieldOptions.columns=1
     //% font.fieldOptions.itemColour="transparent"
     //% font.fieldOptions.tooltips="true"
-    export function __fontPicker(font: FontName): Font {
-        return getFont(font);
+    export function __fontPicker(font: Font): Font {
+        return font;
     }
 
     //% whenUsed
+    //% block="font8" enumval=0
+    //% blockIdentity="bitmaps.__fontPicker"
     export const font8: Font = {
         charWidth: 6,
         charHeight: 8,
@@ -156,6 +149,8 @@ a420a8fcaa828400 a720087e2a1c0800 ab200098a4a6bf02 ac20183c5a5a4200 af20627f2244
 
     // A unicode 12x12 pixel font based on https://github.com/adobe-fonts/source-han-sans
     //% whenUsed jres
+    //% block="font12" enumval=2
+    //% blockIdentity="bitmaps.__fontPicker"
     export const font12: Font = {
         charWidth: 12,
         charHeight: 12,
@@ -189,6 +184,8 @@ a420a8fcaa828400 a720087e2a1c0800 ab200098a4a6bf02 ac20183c5a5a4200 af20627f2244
     }
 
     //% whenUsed
+    //% block="font5" enumval=1
+    //% blockIdentity="bitmaps.__fontPicker"
     export const font5: Font = {
         charWidth: 6,
         charHeight: 5,
