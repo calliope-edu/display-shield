@@ -383,8 +383,9 @@ namespace helpers {
         if (label1 !== undefined) {
             imagePrint(img, label1, labelX, y, color, font);
             if (value1 !== undefined) {
-                const valueWidth = value1.length * font.charWidth;
-                imagePrint(img, value1, valueX - valueWidth, y, color, font);
+                const val1 = "" + value1;
+                const valueWidth = val1.length * font.charWidth;
+                imagePrint(img, val1, valueX - valueWidth, y, color, font);
             }
             y += lineHeight;
         }
@@ -393,8 +394,9 @@ namespace helpers {
         if (label2 !== undefined) {
             imagePrint(img, label2, labelX, y, color, font);
             if (value2 !== undefined) {
-                const valueWidth = value2.length * font.charWidth;
-                imagePrint(img, value2, valueX - valueWidth, y, color, font);
+                const val2 = "" + value2;
+                const valueWidth = val2.length * font.charWidth;
+                imagePrint(img, val2, valueX - valueWidth, y, color, font);
             }
             y += lineHeight;
         }
@@ -403,8 +405,9 @@ namespace helpers {
         if (label3 !== undefined) {
             imagePrint(img, label3, labelX, y, color, font);
             if (value3 !== undefined) {
-                const valueWidth = value3.length * font.charWidth;
-                imagePrint(img, value3, valueX - valueWidth, y, color, font);
+                const val3 = "" + value3;
+                const valueWidth = val3.length * font.charWidth;
+                imagePrint(img, val3, valueX - valueWidth, y, color, font);
             }
         }
     }
