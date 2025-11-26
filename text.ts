@@ -143,6 +143,42 @@ a420a8fcaa828400 a720087e2a1c0800 ab200098a4a6bf02 ac20183c5a5a4200 af20627f2244
         return bitmaps.font8
     }
 
+    /**
+     * Get font8
+     */
+    //% blockId=font8_block
+    //% block="font8"
+    //% weight=10
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export function _font8(): Font {
+        return font8;
+    }
+
+    /**
+     * Get font12
+     */
+    //% blockId=font12_block
+    //% block="font12"
+    //% weight=9
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export function _font12(): Font {
+        return font12;
+    }
+
+    /**
+     * Get font5
+     */
+    //% blockId=font5_block
+    //% block="font5"
+    //% weight=8
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export function _font5(): Font {
+        return font5;
+    }
+
     //% deprecated=1 hidden=1
     export function doubledFont(f: Font): Font {
         return scaledFont(f, 2)
