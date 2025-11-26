@@ -59,6 +59,16 @@ namespace bitmaps {
     export function __colorIndexPicker(index: number) {
         return index;
     }
+
+    //% blockId=fontpicker block="$font" blockHidden=true shim=TD_ID
+    //% font.fieldEditor="gridpicker"
+    //% font.fieldOptions.width="200"
+    //% font.fieldOptions.columns="1"
+    //% font.fieldOptions.itemColour="black"
+    //% font.fieldOptions.tooltips="true"
+    export function __fontPicker(font: Font): Font {
+        return font;
+    }
 }
     //% blockIdentity=bitmaps._bitmap
     const defaultBitmap: Bitmap = bmp`
