@@ -346,7 +346,7 @@ namespace helpers {
     //% blockNamespace="drawing" group="Text"
     //% weight=85
     //% expandableArgumentMode="enabled"
-    //% inlineInputMode=inline
+    //% inlineInputMode=external
     //% color.defl=1
     //% headline.defl="Übersicht"
     //% label1.defl="Temperatur" value1.defl="22"
