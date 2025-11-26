@@ -8,8 +8,6 @@ namespace bitmaps {
     }
 
     //% whenUsed
-    //% blockIdentity="bitmaps.__fontPicker"
-    //% block="font8 (8px)"
     export const font8: Font = {
         charWidth: 6,
         charHeight: 8,
@@ -130,8 +128,6 @@ a420a8fcaa828400 a720087e2a1c0800 ab200098a4a6bf02 ac20183c5a5a4200 af20627f2244
 
     // A unicode 12x12 pixel font based on https://github.com/adobe-fonts/source-han-sans
     //% whenUsed jres
-    //% blockIdentity="bitmaps.__fontPicker"
-    //% block="font12 (12px)"
     export const font12: Font = {
         charWidth: 12,
         charHeight: 12,
@@ -165,8 +161,6 @@ a420a8fcaa828400 a720087e2a1c0800 ab200098a4a6bf02 ac20183c5a5a4200 af20627f2244
     }
 
     //% whenUsed
-    //% blockIdentity="bitmaps.__fontPicker"
-    //% block="font5 (5px)"
     export const font5: Font = {
         charWidth: 6,
         charHeight: 5,
@@ -208,7 +202,7 @@ interface Bitmap {
     //% this.shadow="theScreen"
     //% weight=90
     //% x.defl=0 y.defl=0 color.defl=1 text.defl="Hello"
-    //% font.shadow="variables_get" font.defl="font8"
+    //% font.shadow="font8_block"
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
     print(text: string, x: number, y: number, color?: number, font?: bitmaps.Font, offsets?: texteffects.TextEffectState[]): void;
@@ -219,7 +213,7 @@ interface Bitmap {
     //% this.shadow="theScreen"
     //% weight=89
     //% y.defl=60 color.defl=1 text.defl="Hello"
-    //% font.shadow="variables_get" font.defl="font8"
+    //% font.shadow="font8_block"
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
     printCenter(text: string, y: number, color?: number, font?: bitmaps.Font): void;

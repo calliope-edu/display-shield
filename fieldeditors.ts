@@ -59,6 +59,42 @@ namespace bitmaps {
     export function __colorIndexPicker(index: number) {
         return index;
     }
+
+    /**
+     * Get font8
+     */
+    //% blockId=font8_block
+    //% block="font8"
+    //% weight=10
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export function _font8(): Font {
+        return font8;
+    }
+
+    /**
+     * Get font12
+     */
+    //% blockId=font12_block
+    //% block="font12"
+    //% weight=9
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export function _font12(): Font {
+        return font12;
+    }
+
+    /**
+     * Get font5
+     */
+    //% blockId=font5_block
+    //% block="font5"
+    //% weight=8
+    //% group="Text"
+    //% blockNamespace="drawing"
+    export function _font5(): Font {
+        return font5;
+    }
 }
     //% blockIdentity=bitmaps._bitmap
     const defaultBitmap: Bitmap = bmp`
