@@ -60,40 +60,12 @@ namespace bitmaps {
         return index;
     }
 
-    /**
-     * Get font8
-     */
-    //% blockId=font8_block
-    //% block="font8"
-    //% weight=10
-    //% group="Text"
-    //% blockNamespace="drawing"
-    export function _font8(): Font {
-        return font8;
-    }
-
-    /**
-     * Get font12
-     */
-    //% blockId=font12_block
-    //% block="font12"
-    //% weight=9
-    //% group="Text"
-    //% blockNamespace="drawing"
-    export function _font12(): Font {
-        return font12;
-    }
-
-    /**
-     * Get font5
-     */
-    //% blockId=font5_block
-    //% block="font5"
-    //% weight=8
-    //% group="Text"
-    //% blockNamespace="drawing"
-    export function _font5(): Font {
-        return font5;
+    //% blockId=fontpicker block="$font" blockHidden=true shim=TD_ID
+    //% font.fieldEditor="dropdownnumber"
+    //% font.fieldOptions.decompileLiterals="true"
+    //% font.fieldOptions.data='[["font8","bitmaps.font8"],["font12","bitmaps.font12"],["font5","bitmaps.font5"]]'
+    export function __fontPicker(font: Font): Font {
+        return font;
     }
 }
     //% blockIdentity=bitmaps._bitmap
