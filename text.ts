@@ -7,6 +7,24 @@ namespace bitmaps {
         multiplier?: number;
     }
 
+    export enum FontName {
+        //% block="font8"
+        Font8,
+        //% block="font5"
+        Font5,
+        //% block="font12"
+        Font12
+    }
+
+    export function getFont(fontName: FontName): Font {
+        switch (fontName) {
+            case FontName.Font5: return font5;
+            case FontName.Font12: return font12;
+            case FontName.Font8:
+            default: return font8;
+        }
+    }
+
     //% whenUsed
     export const font8: Font = {
         charWidth: 6,
@@ -202,9 +220,10 @@ interface Bitmap {
     //% this.shadow="theScreen"
     //% weight=90
     //% x.defl=0 y.defl=0 color.defl=1 text.defl="Hello"
+    //% font.defl=bitmaps.FontName.Font8
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
-    print(text: string, x: number, y: number, color?: number, font?: bitmaps.Font, offsets?: texteffects.TextEffectState[]): void;
+    print(text: string, x: number, y: number, color?: number, font?: bitmaps.FontName, offsets?: texteffects.TextEffectState[]): void;
 
     //% helper=imagePrintCenter blockNamespace="drawing" group="Drawing"
     //% block="print $text centered in $this at y $y $color=colorindexpicker || font $font"
@@ -212,25 +231,25 @@ interface Bitmap {
     //% this.shadow="theScreen"
     //% weight=89
     //% y.defl=60 color.defl=1 text.defl="Hello"
+    //% font.defl=bitmaps.FontName.Font8
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
-    printCenter(text: string, y: number, color?: number, font?: bitmaps.Font): void;
+    printCenter(text: string, y: number, color?: number, font?: bitmaps.FontName): void;
 
 }
 
 namespace helpers {
-    export function imagePrintCenter(img: Bitmap, text: string, y: number, color?: number, font?: bitmaps.Font) {
-        if (!font) font = bitmaps.getFontForText(text)
+    export function imagePrintCenter(img: Bitmap, text: string, y: number, color?: number, fontName?: bitmaps.FontName) {
+        let font = fontName !== undefined ? bitmaps.getFont(fontName) : bitmaps.getFontForText(text)
         let w = text.length * font.charWidth
         let x = (img.width - w) / 2
-        imagePrint(img, text, x, y, color, font)
+        imagePrint(img, text, x, y, color, fontName)
     }
 
-    export function imagePrint(img: Bitmap, text: string, x: number, y: number, color?: number, font?: bitmaps.Font, offsets?: texteffects.TextEffectState[]) {
+    export function imagePrint(img: Bitmap, text: string, x: number, y: number, color?: number, fontName?: bitmaps.FontName, offsets?: texteffects.TextEffectState[]) {
         x |= 0
         y |= 0
-        if (!font)
-            font = bitmaps.getFontForText(text)
+        let font = fontName !== undefined ? bitmaps.getFont(fontName) : bitmaps.getFontForText(text)
         if (!color) color = 1
         let x0 = x
         let cp = 0
