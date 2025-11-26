@@ -9,6 +9,7 @@ namespace bitmaps {
 
     //% whenUsed
     //% blockId=bitmaps_font8
+    //% blockNamespace="bitmaps"
     //% block="font 8x8"
     export const font8: Font = {
         charWidth: 6,
@@ -131,6 +132,7 @@ a420a8fcaa828400 a720087e2a1c0800 ab200098a4a6bf02 ac20183c5a5a4200 af20627f2244
     // A unicode 12x12 pixel font based on https://github.com/adobe-fonts/source-han-sans
     //% whenUsed jres
     //% blockId=bitmaps_font12
+    //% blockNamespace="bitmaps"
     //% block="font 12x12"
     export const font12: Font = {
         charWidth: 12,
@@ -166,6 +168,7 @@ a420a8fcaa828400 a720087e2a1c0800 ab200098a4a6bf02 ac20183c5a5a4200 af20627f2244
 
     //% whenUsed
     //% blockId=bitmaps_font5
+    //% blockNamespace="bitmaps"
     //% block="font 5x5"
     export const font5: Font = {
         charWidth: 6,
