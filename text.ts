@@ -342,16 +342,17 @@ namespace helpers {
     }
 
     //% blockId=imageShowDataView
-    //% block="show data view in $img=theScreen headline $headline || $label1 $value1 || $label2 $value2 || $label3 $value3 || color $color=colorindexpicker font $font"
+    //% block="show data view in $img=theScreen headline $headline | $label1 $value1 | $label2 $value2 | $label3 $value3 || color $color=colorindexpicker font $font"
     //% blockNamespace="drawing" group="Text"
     //% weight=85
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
     //% color.defl=1
-    //% headline.defl="Status"
-    //% label1.defl="Score" value1.defl="0"
-    //% label2.defl="Level" value2.defl="1"
-    //% label3.defl="Lives" value3.defl="3"
+    //% headline.defl="Uebersicht"
+    //% label1.defl="Temperatur" value1.defl="22"
+    //% label2.defl="Feuchtigkeit" value2.defl="55"
+    //% label3.defl="Luftdruck" value3.defl="1000"
+    //% inlineInputMode=external
     //% font.shadow="font8_block"
     export function imageShowDataView(
         img: Bitmap, 
