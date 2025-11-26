@@ -340,4 +340,72 @@ namespace helpers {
             }
         }
     }
+
+    //% blockId=imageShowDataView
+    //% block="show data view in $img=theScreen | headline $headline || label1 $label1 value1 $value1 label2 $label2 value2 $value2 label3 $label3 value3 $value3 color $color=colorindexpicker font $font"
+    //% blockNamespace="drawing" group="Text"
+    //% weight=85
+    //% expandableArgumentMode="toggle"
+    //% inlineInputMode=inline
+    //% color.defl=1
+    //% headline.defl="Status"
+    //% label1.defl="Score" value1.defl="0"
+    //% label2.defl="Level" value2.defl="1"
+    //% label3.defl="Lives" value3.defl="3"
+    //% font.shadow="font8_block"
+    export function imageShowDataView(
+        img: Bitmap, 
+        headline: string,
+        label1?: string, 
+        value1?: string, 
+        label2?: string, 
+        value2?: string, 
+        label3?: string, 
+        value3?: string,
+        color?: number,
+        font?: bitmaps.Font
+    ) {
+        if (!font) font = bitmaps.font8;
+        if (!color) color = 1;
+        
+        const lineHeight = font.charHeight + 2;
+        const labelX = 2;
+        const valueX = bitmaps.width(img) - 2;
+        let y = 2;
+        
+        // Print headline
+        if (headline) {
+            imagePrintCenter(img, headline, y, color, font);
+            y += lineHeight + 2; // Extra spacing after headline
+        }
+        
+        // Print label-value pair 1
+        if (label1 !== undefined) {
+            imagePrint(img, label1, labelX, y, color, font);
+            if (value1 !== undefined) {
+                const valueWidth = value1.length * font.charWidth;
+                imagePrint(img, value1, valueX - valueWidth, y, color, font);
+            }
+            y += lineHeight;
+        }
+        
+        // Print label-value pair 2
+        if (label2 !== undefined) {
+            imagePrint(img, label2, labelX, y, color, font);
+            if (value2 !== undefined) {
+                const valueWidth = value2.length * font.charWidth;
+                imagePrint(img, value2, valueX - valueWidth, y, color, font);
+            }
+            y += lineHeight;
+        }
+        
+        // Print label-value pair 3
+        if (label3 !== undefined) {
+            imagePrint(img, label3, labelX, y, color, font);
+            if (value3 !== undefined) {
+                const valueWidth = value3.length * font.charWidth;
+                imagePrint(img, value3, valueX - valueWidth, y, color, font);
+            }
+        }
+    }
 }
