@@ -1,7 +1,7 @@
 {
     "name": "display-shield",
     "version": "1.1.4",
-    "description": "Display shield extension for MakeCode micro:bit and Calliope mini",
+    "description": "Program display shields for Calliope mini",
     "dependencies": {
         "core": "*",
         "bitmap": "*",
@@ -73,11 +73,6 @@
     "disablesVariants": [
         "mbdal"
     ],
-    "yotta": {
-        "config": {
-            "DMESG_SERIAL_DEBUG": 1
-        }
-    },
     "tests": [
         "test.ts"
     ],
