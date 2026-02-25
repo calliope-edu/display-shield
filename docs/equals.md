@@ -66,5 +66,5 @@ if (secondBitmap.equals(firstBitmap)) {
 
 
 ```package
-display-shield=github:microbit-apps/display-shield
+display-shield=github:calliope-edu/display-shield
 ```

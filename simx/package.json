@@ -2,7 +2,7 @@
   "name": "@display-shield/simx",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://github.com/microbit-apps/display-shield",
+  "homepage": "https://github.com/calliope-edu/display-shield",
   "type": "module",
   "scripts": {
     "dev": "vite",
