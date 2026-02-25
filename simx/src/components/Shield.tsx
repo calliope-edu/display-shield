@@ -58,7 +58,7 @@ function postMessagePacket(msg: any) {
     window.parent.postMessage(
         {
             type: "messagepacket",
-            channel: "microbit-apps/display-shield",
+            channel: "calliope-edu/display-shield",
             data: payload,
         },
         "*"
