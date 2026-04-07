@@ -45,7 +45,7 @@
   "controller.down|block": "runter",
   "controller.left|block": "links",
   "controller.menu|block": "Menü",
-  "controller.onShieldEvent|block": "wenn Shield $event",
+  "controller.onShieldEvent|block": "wenn GameKit $event",
   "controller.right|block": "rechts",
   "controller.up|block": "hoch",
   "controller|block": "Tasten",
