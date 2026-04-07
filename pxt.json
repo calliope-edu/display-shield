@@ -1,7 +1,7 @@
 {
-    "name": "display-shield",
-    "version": "1.1.4",
-    "description": "Program display shields for Calliope mini",
+    "name": "GameKit",
+    "version": "1.1.5",
+    "description": "Program GameKit for Calliope mini",
     "dependencies": {
         "core": "*",
         "bitmap": "*",
@@ -67,7 +67,8 @@
         "targetId": "microbit"
     },
     "supportedTargets": [
-        "microbit"
+        "microbit",
+        "calliopemini"
     ],
     "preferredEditor": "tsprj",
     "disablesVariants": [
