@@ -219,7 +219,7 @@ interface Bitmap {
     //% blockId=bitmapPrint
     //% this.shadow="theScreen"
     //% weight=90
-    //% x.defl=0 y.defl=0 color.defl=1 text.defl="Hello"
+    //% x.defl=0 y.defl=0 color.defl=1 text.defl="Hallo"
     //% font.shadow="font8_block"
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
@@ -230,7 +230,7 @@ interface Bitmap {
     //% blockId=bitmapPrintCenter
     //% this.shadow="theScreen"
     //% weight=89
-    //% y.defl=60 color.defl=1 text.defl="Hello"
+    //% y.defl=60 color.defl=1 text.defl="Hallo"
     //% font.shadow="font8_block"
     //% expandableArgumentMode="toggle"
     //% inlineInputMode=inline
@@ -350,12 +350,12 @@ namespace helpers {
     //% img.shadow="theScreen"
     //% color.defl=1
     //% backgroundColor.defl=15
-    //% headline.defl="Overview"
-    //% label1.defl="Temperature"
+    //% headline.defl="Übersicht"
+    //% label1.defl="Temperatur"
     //% value1.defl=22
-    //% label2.defl="Light Level"
+    //% label2.defl="Lichtstärke"
     //% value2.defl=55
-    //% label3.defl="Sound Level"
+    //% label3.defl="Lautstärke"
     //% value3.defl=50
     //% font.shadow="font8_block"
     //% offset.defl=0

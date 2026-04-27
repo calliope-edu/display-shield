@@ -55,8 +55,8 @@
         "docs/draw-bitmap.md",
         "docs/draw-circle.md",
         "tutorials/getting-started.md",
-        "_locales/de/display-shield-jsdoc-strings.json",
-        "_locales/de/display-shield-strings.json"
+        "_locales/de/GameKit-jsdoc-strings.json",
+        "_locales/de/GameKit-strings.json"
     ],
     "testFiles": [
         "test.ts"
