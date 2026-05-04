@@ -58,7 +58,7 @@ function postMessagePacket(msg: any) {
     window.parent.postMessage(
         {
             type: "messagepacket",
-            channel: "calliope-edu/display-shield",
+            channel: "calliope-edu/gamekit",
             data: payload,
         },
         "*"

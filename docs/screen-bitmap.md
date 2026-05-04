@@ -59,5 +59,5 @@ screen().drawBitmap(cake,0,0)
 
 
 ```package
-display-shield=github:calliope-edu/display-shield
+display-shield=github:calliope-edu/gamekit
 ```

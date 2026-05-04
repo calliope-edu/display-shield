@@ -50,5 +50,5 @@ screen().drawTransparentBitmap(greenBall, 0, 0)
 To see the difference, change the second call from `drawTransparentBitmap` to `drawBitmap`.
 
 ```package
-display-shield=github:calliope-edu/display-shield
+display-shield=github:calliope-edu/gamekit
 ```

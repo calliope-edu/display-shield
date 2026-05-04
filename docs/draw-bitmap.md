@@ -28,5 +28,5 @@ screen().drawBitmap(doubleRect,10,10)
 ```
 
 ```package
-display-shield=github:calliope-edu/display-shield
+display-shield=github:calliope-edu/gamekit
 ```

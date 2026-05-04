@@ -21,5 +21,5 @@ controller.onShieldEvent(ControllerShieldEvent.Present, function () {
 ```
 
 ```package
-display-shield=github:calliope-edu/display-shield
+display-shield=github:calliope-edu/gamekit
 ```

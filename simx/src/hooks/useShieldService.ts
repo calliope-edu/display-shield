@@ -6,7 +6,7 @@ function postMessage(msg: protocol.ArcadeShieldMessage) {
     window.parent.postMessage(
         {
             type: "messagepacket",
-            channel: "calliope-edu/display-shield",
+            channel: "calliope-edu/gamekit",
             data: payload,
         },
         "*"
@@ -42,7 +42,7 @@ export function useShieldService(
         function handleMessagePacket(msg: any) {
             const srcFrameIndex = (msg.srcFrameIndex as number) ?? -1
             switch (msg.channel) {
-                case "calliope-edu/display-shield":
+                case "calliope-edu/gamekit":
                     return handleShieldMessage(msg.data, srcFrameIndex)
                 case "jacdac":
                     return

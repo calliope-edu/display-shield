@@ -42,5 +42,5 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ```
 
 ```package
-display-shield=github:calliope-edu/display-shield
+display-shield=github:calliope-edu/gamekit
 ```

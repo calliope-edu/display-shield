@@ -55,7 +55,7 @@ namespace shieldhelpers {
         }
 
         private sendMessage(msg: string) {
-            control.simmessages.send("calliope-edu/display-shield", Buffer.fromUTF8(msg) , false)
+            control.simmessages.send("calliope-edu/gamekit", Buffer.fromUTF8(msg) , false)
         }
 
         initSim() {
@@ -101,7 +101,7 @@ namespace shieldhelpers {
 
     //% shim=TD_NOOP
     function startSim() {
-        control.simmessages.onReceived("calliope-edu/display-shield", handleShieldMessage)
+        control.simmessages.onReceived("calliope-edu/gamekit", handleShieldMessage)
         _screenState.initSim()
         while (!_screenState.gotSimMessage) {
             basic.pause(0)

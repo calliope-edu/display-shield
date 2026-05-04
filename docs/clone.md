@@ -37,5 +37,5 @@ screen().drawBitmap(stickPerson2, 0, 32)
 ```
 
 ```package
-display-shield=github:calliope-edu/display-shield
+display-shield=github:calliope-edu/gamekit
 ```
